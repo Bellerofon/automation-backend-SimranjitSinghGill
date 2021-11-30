@@ -14,6 +14,9 @@ describe('testing auth', function(){
     it('Delete a Client', function(){
         clientHelpers.deleteRequestAfterGet(cy)
     })
+    it('Edit a Client', function(){
+    clientHelpers.createClientRequestEdit(cy)
+    })
     // it('Create a client and delete it', function(){
     //     clientHelpers.createClientRequestAndDelete(cy)
     // })

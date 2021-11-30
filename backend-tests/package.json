@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "reporter": "cypress run --reporter mochawesome --spec cypress/integration/backend-auth.spec.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,9 @@
     "cypress": "^9.1.0"
   },
   "dependencies": {
-    "faker": "^5.5.3"
+    "faker": "^5.5.3",
+    "mocha": "^5.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0"
   }
 }
